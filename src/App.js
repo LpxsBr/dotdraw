@@ -1,6 +1,5 @@
 import './App.css';
 import { useState } from 'react';
-import { useLongPress } from 'use-long-press';
 
 function App() {
 
@@ -49,7 +48,7 @@ function App() {
           <button onClick={redo}>{'Redo >>'}</button>
         </div>
       </header>
-      <div className='quadro' onClick={createDot}>
+      <div className='quadro' onMouseMove={createDot}>
         {DotList.map((item, key) => {
           return (
             <div key={key} className='dot' style={{backgroundColor: item.color,width: item.width, height: item.width, top: item.top, left: item.left}}/>
