@@ -39,3 +39,17 @@
   display: flex;
   gap: 10px;
 }
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  padding: 3%;
+}
+
+.social>a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

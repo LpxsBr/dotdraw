@@ -79,8 +79,14 @@ function Board() {
                     )
                 })}
             </div>
-            <div>
-                <h5>Source Code: <a>lalala</a></h5>
+            <div className="social">
+                <a href="https://www.github.com/LpxsBr" target={"_blank"} rel={"noreferrer"}>
+                    <img src="https://img.shields.io/badge/-Anselmo%20LpxsBr-blue?style=flat-square&logo=Github&logoColor=white&link=https://github.com/LpxsBr" alt="badge perfil github"/>
+                </a>
+                <a href="https://www.github.com/LpxsBr/dotdraw" target={"_blank"} rel={"noreferrer"}>
+                    <img src="https://img.shields.io/github/watchers/LpxsBr/dotdraw?style=social&label=Resposit%C3%B3rio" alt="badge respositorio github"/>
+                </a>
+                <img src="https://img.shields.io/github/watchers/LpxsBr/dotdraw?style=social" alt="badge start watcher github"/>
             </div>
         </div>
     )
