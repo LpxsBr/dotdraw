@@ -22,7 +22,6 @@ function Board() {
     }
 
     const redo = () => {
-        console.log('redo')
         setHistory((prev) => {
             const newHistory = [...prev].slice(0, - 1)
             console.log({ dotList: newHistory })
@@ -38,19 +37,19 @@ function Board() {
     }
 
     const undo = () => {
-        console.log('undo')
-        setHistory((prev) => {
-            const newHistory = [...prev, DotList[DotList.length - 1]]
-            console.log({ dotList: newHistory })
-            return newHistory;
-        })
-        console.log({ history: history })
-        console.log(DotList[DotList.length - 1])
-        setDotList((prev) => {
-            const newDotList = [...prev].slice(0, - 1)
-            console.log({ dotList: newDotList })
-            return newDotList
-        })
+        if(DotList.length !== 0){
+            setHistory((prev) => {
+                const newHistory = [...prev, DotList[DotList.length - 1]]
+                console.log({ history: history })
+                return newHistory;
+            })
+            
+            setDotList((prev) => {
+                const newDotList = [...prev].slice(0, - 1)
+                console.log({ dotList: newDotList })
+                return newDotList
+            })
+        }
     }
 
     return (
