@@ -134,7 +134,7 @@ function Board() {
                         </div>
                     </div>
                 </header>
-                <div className='quadro' onMouseMove={createDot}>
+                <div className='quadro' onClick={createDot}>
                     {DotList.map((item, key) => {
                         return (
                             <div key={key} className='dot' style={{ backgroundColor: item.color, width: item.width, height: item.width, top: item.top, left: item.left }} />
